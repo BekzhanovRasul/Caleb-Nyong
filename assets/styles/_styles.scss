@@ -1,0 +1,411 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primary-font;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+// Global styles
+.container{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.primary-btn{
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: $primary-color;
+}
+
+.paragraph{
+    font-size: 18px;
+    color: $primary-color;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.caption{
+    font-size: 24px;
+    font-weight: 400;
+    color: #207733;
+}
+
+.description{
+    font-size: 18px;
+    color: #000000;
+    opacity: .5;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 21px; 
+
+    a{
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        font-size: 15px;
+        font-weight: 600;   
+    }
+}
+
+.captions{
+    text-align: center;
+
+    h1{
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+
+// Header section style start
+header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 99;
+
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-links{
+            display: flex;
+            gap: 12px;  
+
+            li{
+                padding: 10px;
+
+                a{
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 21px;
+
+                    &:hover{
+                        font-weight: 700;
+                        text-shadow: 2px 5px 2px rgba(0,0,0,0.25);
+                    }
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: #fff;
+    }
+}
+// Header section style end
+
+// Main section styles start
+.main{
+    height: 100vh;
+    position: relative;
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .left{
+            width: 600px;        
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 6.8px;
+            }
+        }
+
+        .profile-card{
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            left: 60px;
+            transform: translateY(50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 7px;
+            box-shadow: 0px 2.72px 34.02px 0px #13173D1A;
+            
+            .top{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                img{
+                    width: 47px;
+                    height: 47px;
+                }
+
+                .name{
+                    font-size: 16px;    
+                    font-weight: 500;
+                }
+
+                .date{
+                    font-size: 14px;
+                    opacity: .5;
+                }
+            }
+
+            .bottom{
+                opacity: .7;
+            }
+        }   
+    }
+}
+// Main section styles end
+
+// About section styles start
+.about{
+    height: auto;
+    
+    .container{
+        height: 100%;    
+        padding: 60px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .content{
+            width: 650px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h1{
+                    font-weight: 400;
+                    font-size: 36px;
+                }
+            }
+
+            .icons{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p{
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $primary-color;
+                    }
+
+                    h4{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+// About section styles end
+
+// Services section styles start
+.services{
+    height: auto;
+
+    .container{
+        padding: 90px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            .card{
+                text-align: center;
+            }
+        }
+    }
+}
+// Services section styles end
+
+// Portfolio section styles start
+.portfolio{
+    height: auto;
+
+    .container{
+        height: 100%;
+        padding: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// Portfolio section styles end
+
+// Contact section styles start
+.contact{
+    height: auto;
+    background: linear-gradient(180deg, rgba(236, 178, 46, 0.0754) 0%, rgba(255, 255, 255, 0.1144) 100%);
+
+    .container{
+        height: 100%;
+        padding: 60px 0px;  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+
+            .top{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2{
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+            }
+
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                span{
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                }
+            }
+        }
+
+        .right{
+            width: 535px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .inputs{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+
+                input,textarea{
+                    padding: 28px 35px;
+                    border-radius: 10px;
+                    border: 1.95px solid #00000080;
+                
+                    &::placeholder{
+                        color: #000;
+                        opacity: .5;
+                    }
+                }
+
+                textarea{
+                    resize: none;
+                }
+            }
+        }
+    }
+}
+// Contact section styles end
+
+// Footer section styles start
+footer{
+    height: auto;
+
+    .container{
+        padding: 60px 0px;
+        display: flex;
+        justify-content: space-between;
+        
+        .about{
+            width: 285px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            img{
+                width: 70px;
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            color: #000;
+
+            h3{
+                opacity: 0.81;
+            }
+
+            p{
+                opacity: 0.31;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// Footer section styles end

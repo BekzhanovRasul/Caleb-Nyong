@@ -1,0 +1,351 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary-btn {
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 30px;
+  background-color: #FCC028;
+}
+
+.paragraph {
+  font-size: 18px;
+  color: #FCC028;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.caption {
+  font-size: 24px;
+  font-weight: 400;
+  color: #207733;
+}
+
+.description {
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.btns a {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.captions {
+  text-align: center;
+}
+.captions h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 99;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .nav-links {
+  display: flex;
+  gap: 12px;
+}
+header .container .nav-links li {
+  padding: 10px;
+}
+header .container .nav-links li a {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+}
+header .container .nav-links li a:hover {
+  font-weight: 700;
+  text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.25);
+}
+header.active {
+  background-color: #fff;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+.main .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main .container .left {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.main .container .left .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 6.8px;
+}
+.main .container .profile-card {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 7px;
+  box-shadow: 0px 2.72px 34.02px 0px rgba(19, 23, 61, 0.1019607843);
+}
+.main .container .profile-card .top {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.main .container .profile-card .top img {
+  width: 47px;
+  height: 47px;
+}
+.main .container .profile-card .top .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.main .container .profile-card .top .date {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.main .container .profile-card .bottom {
+  opacity: 0.7;
+}
+
+.about {
+  height: auto;
+}
+.about .container {
+  height: 100%;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container .content {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.about .container .content .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about .container .content .texts h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+.about .container .content .icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.about .container .content .icons .icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about .container .content .icons .icon p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FCC028;
+}
+.about .container .content .icons .icon h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.services {
+  height: auto;
+}
+.services .container {
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.services .container .cards .card {
+  text-align: center;
+}
+
+.portfolio {
+  height: auto;
+}
+.portfolio .container {
+  height: 100%;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolio .container .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+.portfolio .container .cards img {
+  width: 100%;
+}
+
+.contact {
+  height: auto;
+  background: linear-gradient(180deg, rgba(236, 178, 46, 0.0754) 0%, rgba(255, 255, 255, 0.1144) 100%);
+}
+.contact .container {
+  height: 100%;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.contact .container .left .top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .container .left .top h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.contact .container .left .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact .container .left .bottom span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.contact .container .right {
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact .container .right .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.contact .container .right .inputs input, .contact .container .right .inputs textarea {
+  padding: 28px 35px;
+  border-radius: 10px;
+  border: 1.95px solid rgba(0, 0, 0, 0.5019607843);
+}
+.contact .container .right .inputs input::-moz-placeholder, .contact .container .right .inputs textarea::-moz-placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+.contact .container .right .inputs input::placeholder, .contact .container .right .inputs textarea::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+.contact .container .right .inputs textarea {
+  resize: none;
+}
+
+footer {
+  height: auto;
+}
+footer .container {
+  padding: 60px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .about {
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .container .about img {
+  width: 70px;
+}
+footer .container .about p {
+  font-size: 12px;
+}
+footer .container .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+footer .container .menu h3 {
+  opacity: 0.81;
+}
+footer .container .menu p {
+  opacity: 0.31;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
